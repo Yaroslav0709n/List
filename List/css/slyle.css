@@ -1,0 +1,194 @@
+*
+*::before
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-width: 1350px;
+  background: linear-gradient(to bottom, #0099ff -30%, #ffff66 100%);
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+/*CONTAINER
+_  _ _ _ _ _ _*/
+.container{
+  margin-left: 220px;
+  margin-right: 220px;
+}
+.wraper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.foodlist__block{
+  margin-top: 100px;
+  background: white;
+  border-radius: 20px;
+  height: 2000px;
+  width: 900px;
+}
+.foodlist__title{
+  padding: 50px 0;
+  margin-left: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.foodlist__search-btn{
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.foodlist__search{
+  width: 600px;
+  height: 60px;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-left: 50px;
+  border: 2px solid #D8D8D8;
+}
+.foodlist__btn{
+  height: 60px;
+  width: 80px;
+  margin: 0 0 0 20px;
+  border-radius: 10px;
+  border: 1px solid #424242;
+  transition: 0.2s;
+}
+
+.foodlist__btn:hover{
+  background: #A4A4A4;
+}
+
+
+
+
+.food__item{
+
+}
+
+
+.result__list{
+  margin-top: 40px;
+  margin-left: 50px;
+  font-size: 35px;
+  width: 390px;
+}
+.result__list-active{
+  text-decoration: line-through;
+}
+.result{
+  margin: 0;
+  padding: 0;
+}
+.result__item{
+  display: flex;
+  align-items: center;
+  width: 900px;
+  height: 80px;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+.result__item:hover{
+  background: #D8D8D8;
+}
+
+.delete__btn{
+  margin: 0px 0 0 40px;
+  width: 25px;
+  height: 36px;
+  background: url('../image/delete.png');
+  border: none;
+}
+.checkbox{
+  width: 40px;
+  height: 40px;
+}
+.result__block{
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px){
+  body{
+    min-width: 1000px;
+  }
+  .container{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .foodlist__block{
+    margin-top: 50px;
+    width: 800px;
+  }
+  .result__item{
+    width: 800px;
+    height: 80px;
+  }
+}
+
+
+@media only screen and (max-width: 480px){
+  body{
+    min-width: 500px;
+  }
+  .container{
+    margin-left: 28px;
+    margin-right: 50px;
+  }
+  .foodlist__block{
+    margin-top: 50px;
+    width: 450px;
+  }
+  .foodlist__title{
+    padding: 50px 0 0;
+    margin-left: 0;
+
+  }
+  .foodlist__search{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 40px;
+  }
+  .foodlist__btn{
+    height: 40px;
+    width: 60px;
+    margin: 0 0 0 15px;
+    font-size: 15px;
+  }
+  .result__item{
+    width: 450px;
+    height: 80px;
+  }
+
+  .result__list{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 30px;
+    width: 0;
+  }
+  .delete__btn{
+    margin: 0px 0 0 20px;
+    width: 25px;
+    height: 36px;
+    background: url('../image/delete.png');
+    border: none;
+  }
+  .checkbox{
+    width: 20px;
+    height: 20px;
+    margin-left: 60px;
+  }
+
+}
